@@ -1,0 +1,27 @@
+.Search {
+    width:100px;
+    height: 25px;
+    background-color: rgba(186, 173, 173, 0.189);
+    text-align: center;
+    font-size: large;
+    color:green;
+    border: 2px solid green;
+    border-radius:25px ;
+    margin-bottom: 10px;
+    
+
+}
+.plus{
+    border: 2px solid green;
+    border-radius: 50%;
+    color: white;
+    background-color: green;
+    margin-bottom: 10px;
+
+}
+.account{
+    color: white;
+    background-color: blue;
+    box-shadow: 3px 5px black;
+
+}
