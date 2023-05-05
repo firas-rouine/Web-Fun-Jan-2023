@@ -1,0 +1,18 @@
+h1{
+    background-color: black;
+    color: white;
+}
+h2{
+    background-color: blueviolet;
+    color: white;
+    font-style: italic;
+}
+h3{
+    color: black;
+    text-align: right;
+    background-color: aqua;
+    text-decoration:underline;
+}
+.text{
+    color: rgb(40, 165, 174);
+}
