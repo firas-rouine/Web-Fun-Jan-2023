@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* style container */
+.container{
+    width: 360px;
+    height: 100px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    margin: 50px 200px;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+span{
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+}
+button{
+    width: 70px;
+    background-color: #ffd966;
+    box-shadow: 2px 2px;
+}
+p{
+    font-size: large;
+
+}
