@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DojoWeather</title>
+</head>
+<body>
+    <div class="nav">
+        <h1>DojoWeather</h1>
+        <ul>
+            <li onclick="Alert()"><a href="#">Burbank</a></li>
+            <li onclick="Alert()"><a href="#">Chicago</a></li>
+            <li onclick="Alert()"><a href="#">Dallas</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <div class="subtitle-line">
+            <h1>San Jose</h1>
+            <div class="select">
+                <label >show temperature in </label>
+                <select name="temperature" onchange="convert(this)"  >
+                    <option value="°C">°C</option>
+                    <option value="°F">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="weather">
+            <div class="carte">
+                <h2>Today</h2>
+                <img src="./assets/assets/some_rain.png" alt="image">
+                <h4>some rain</h4>
+                <span>
+                    <h1 class="temp1">24</h1>
+                    <h1 class="temp2">18</h1>
+                </span>
+            </div>
+            <div class="carte">
+                
+                <h2>Tomorrow</h2>
+                <img src="./assets/assets/some_sun.png" alt="image">
+                <h4>some sun</h4>
+                <span>
+                    <h1 class="temp3">27</h1>
+                    <h1 class="temp4">19</h1>
+                </span>
+                
+            </div>
+            <div class="carte"> 
+                <h2>Friday</h2>
+                <img src="./assets/assets/some_clouds.png" alt="image">
+                <h4>some clouds</h4>
+                <span>
+                    <h1 class="temp5">24</h1>
+                    <h1 class="temp6">18</h1>
+                </span>
+            </div>
+            <div class="carte">
+                <h2>Saturday</h2>
+                <img src="./assets/assets/some_sun.png" alt="image">
+                <h4>some sun</h4>
+                <span>
+                    <h1 class="temp7">26</h1>
+                    <h1 class="temp8">21</h1>
+                </span>
+            </div>
+        </div>
+        <div class="cookie">
+            <img src="assets/assets/cookie.png" alt="image">
+            <div >
+                <h1>Stop! cookie time</h1>
+                <p>We use cookie (sadly not the edible ones ) to personalise <br>content and ads, to provide social media features and to <br>analyse our traffic. <a href="#">Read more</a></p>
+            </div>
+            <button onclick="accept()">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
