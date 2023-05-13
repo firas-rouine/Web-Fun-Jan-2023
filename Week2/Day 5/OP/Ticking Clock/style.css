@@ -1,0 +1,35 @@
+#face {
+    margin: 0 auto;
+    background-image:url(Clock_background.png);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 10px solid rgb(16, 5, 5);
+    position: relative;
+    
+}
+
+#minutes, #hour, #seconds {
+position: absolute;
+left: 50%;
+top: 50%;
+transform-origin: top center;
+}
+
+#hour {
+background-color: black;
+height: 150px;
+width: 8px;
+}
+
+#minutes {
+background-color: grey;
+height: 170px;
+width: 4px;
+}
+
+#seconds {
+background-color: red;
+height: 180px;
+width: 2px;
+}
