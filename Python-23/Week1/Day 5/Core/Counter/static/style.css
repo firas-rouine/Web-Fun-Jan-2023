@@ -1,0 +1,25 @@
+body{
+    text-align:center;
+    margin: 20px auto;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+.btn1{
+    margin:0 20px;
+    color: white;
+    background-color: rgb(210, 29, 170);
+    border-radius: 10%;
+    border: none;
+    padding: 5px 20px;
+
+}
+.btn2{
+    color: white;
+    background-color:green;
+    border-radius: 10%;
+    border: none;
+    padding: 5px 20px;
+    
+}
