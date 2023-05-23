@@ -1,0 +1,22 @@
+SELECT * FROM dojos_and_ninjas_schema.dojos;
+insert into dojos (name) values ("firas"),("mhamed"),("montassar");
+
+delete  from dojos  where id>=1;
+
+insert into dojos (name) values("mariem"),("dhia"),("ahmed"),("ali");
+
+
+
+
+
+SELECT * FROM dojos_and_ninjas_schema.ninjas;
+
+insert into ninjas (dojo_id,first_name,last_name,age) values (1,"ninja_1","aze",25),(1,"ninja_2","xcvc",25),(1,"ninja_3","bcv",25);
+
+insert into ninjas (dojo_id,first_name,last_name,age) values (2,"ninja_4","afghze",28),(2,"ninja_5","xchjgvc",15),(2,"ninja_6","bgfcv",30);
+
+insert into ninjas (dojo_id,first_name,last_name,age) values (3,"ninja_4","jlh",38),(3,"ninja_5","vnn",45),(3,"ninja_6","dffg",35);
+
+select * from ninjas where dojo_id=1;
+
+select * from ninjas where dojo_id=3;
