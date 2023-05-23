@@ -1,0 +1,20 @@
+SELECT * FROM users;
+
+insert into users(first_name,last_name,email) 
+values("firas","rouine","rouine.firas@gmail.com"),
+("mhamed","monser","mhamed@gmail.com"),
+("montassar","moussa","montasar@gmail.com");
+
+SELECT * FROM users;
+
+select * from users where email = "rouine.firas@gmail.com" ;
+select * from users order by id desc limit 1 ;
+
+update users set last_name = "Pancakes" where id = 3;
+
+delete from users where id=2;
+
+select * from users order by first_name;
+
+select * from users order by first_name desc;
+
