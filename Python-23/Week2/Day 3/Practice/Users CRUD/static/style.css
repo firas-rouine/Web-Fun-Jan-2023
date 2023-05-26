@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.form{
+    width: 800px;
+}
+.a{
+    font-size: 30px;
+}
+.blok-id{
+    padding: 20px;
+    border: 5px solid black;
+    width: 500px;
+    margin-bottom: 20px;
+}
