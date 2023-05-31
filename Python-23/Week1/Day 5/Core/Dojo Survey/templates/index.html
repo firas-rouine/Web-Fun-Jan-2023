@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+
+<body>
+    <style>
+        .form-horizontal{
+            display:block;
+            width:30%;
+            margin:0 auto;
+            background-color: rgb(54, 18, 18);
+            color: white;
+            padding: 20px;
+        } 
+    </style>
+    <form action="/process" method="post" class=" form-horizontal ">
+        <div class="form-group">
+            Name:
+            <input type="text" name="name" class="form-control" >
+        </div>
+        <div class="form-group">
+            
+            <select name="location" id="">
+                dojo Location:
+                <option value="San Jose">San Jose</option>
+                <option value=" Paris"> Paris</option>
+                <option value=" Chicago"> Chicago</option>
+              </select>
+        </div>
+        <div class="form-group">
+            
+            <select name="langauage" id="">
+                dojo Location:
+                <option value="Python">Python</option>
+                <option value=" Java"> Java</option>
+              </select>
+        </div>
+        <div>
+         <textarea name="comment" id="" cols="54" rows="10"></textarea>
+        </div>
+
+        <div class="checkbox">
+            <label>
+            <input type="checkbox"> Check me out
+            </label>
+        </div>
+        
+        <button type="submit" class="btn btn-warning">Submit</button>
+    </form>
+    
+</body>
+</html>
