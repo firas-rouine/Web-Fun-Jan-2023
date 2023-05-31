@@ -11,9 +11,10 @@ def create():
     Dojo.create_dojo(request.form)
     return redirect('/')
 
-app.route('/dojos/<int:id>')
+@app.route('/dojos/<int:id>')
 def show(id):
-    dojos = Dojo.get_all(id)
+    dojos = Dojo.get_by_id({'id':id})
+    ninjas = Dojo.get_all()
     print(dojos,"++++++*******"*20)
-    return render_template("show_ninjas.html", dojos=dojos)
+    return render_template("show_ninjas.html",ninjas=ninjas, dojos=dojos)
     

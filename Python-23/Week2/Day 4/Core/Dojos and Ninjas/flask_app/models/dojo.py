@@ -13,13 +13,21 @@ class Dojo :
     def get_all(cls):
         query = "SELECT * FROM dojos;"
         results = connectToMySQL(DATABASE).query_db(query)
-        print(results,"-"*25)
+        
         dojos = []
         for row in results:
             dojo = cls(row)
             dojo.my_ninjas = ninja.Ninja.get_dojo_ninja({'dojo_id':dojo.id})
             dojos.append(dojo)
+            print(dojos,"-"*25)
         return dojos
+    
+    @classmethod
+    def get_by_id(cls,data):
+        query = "SELECT * FROM dojos where id=%(id)s;"
+        result = connectToMySQL(DATABASE).query_db(query,data)
+        return cls(result[0])
+    
     # Create
     @classmethod
     def create_dojo(cls, data):
