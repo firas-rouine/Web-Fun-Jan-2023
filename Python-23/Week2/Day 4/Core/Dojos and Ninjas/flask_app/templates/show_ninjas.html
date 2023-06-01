@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{dojos.name}} ninjas</h1>
+    <h1>{{dojo.name}} ninjas</h1>
     <table>
         <thead>
             <th>First Name</th>
@@ -15,11 +15,13 @@
             <th>Age</th>
         </thead>
         <tbody>
+            {%for ninja in dojo_ninjas%}
             <tr>
-                <td>{{ninjas.first_name}}</td>
-                <td></td>
-                <td></td>
+                <td>{{ninja.first_name}}</td>
+                <td>{{ninja.last_name}}</td>
+                <td>{{ninja.age}}</td>
             </tr>
+            {%endfor%}
         </tbody>
     </table>
 </body>

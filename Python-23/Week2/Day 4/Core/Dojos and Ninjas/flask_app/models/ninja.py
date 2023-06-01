@@ -12,17 +12,7 @@ class Ninja :
         # self.owner = user.User.get_one({'id':self.user_id}).username
         # self.user = ""
     # CRUD Queries
-    @classmethod
-    def get_all(cls):
-        query = "SELECT * FROM ninjas;"
-        results = connectToMySQL(DATABASE).query_db(query)
-        # print(results,"+*+"*25)
-        ninjas = []
-        for row in results:
-            ninja = cls(row)
-            # book.user=row["username"]
-            ninjas.append(ninja)
-        return ninjas
+   
     # Create
     @classmethod
     def create_ninja(cls, data):
@@ -33,13 +23,13 @@ class Ninja :
         return connectToMySQL(DATABASE).query_db(query,data)
     
     @classmethod
-    def get_dojo_ninja(cls,data):
+    def get_dojo_ninjas(cls,data):
         query = """
         SELECT * FROM ninjas WHERE dojo_id  = %(dojo_id)s;
         """
         results = connectToMySQL(DATABASE).query_db(query,data)
+        print(results,'555555555555555555'*30)
         ninjas = []
-        print(results)
         if(results):
             for row in results:
                 ninjas.append(cls(row))

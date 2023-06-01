@@ -17,7 +17,6 @@ class Dojo :
         dojos = []
         for row in results:
             dojo = cls(row)
-            dojo.my_ninjas = ninja.Ninja.get_dojo_ninja({'dojo_id':dojo.id})
             dojos.append(dojo)
             print(dojos,"-"*25)
         return dojos
